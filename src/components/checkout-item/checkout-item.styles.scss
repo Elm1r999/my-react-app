@@ -12,8 +12,12 @@
       padding-right: 15px;
   
       img {
-        width: 100%;
+        width: 50%;
         height: 100%;
+        
+        &:hover{
+          opacity: 75%;
+        }
       }
     }
     .name,
@@ -23,11 +27,25 @@
     }
   
     .quantity {
-      padding-left: 20px;
+      display: flex;
+      align-items: center;
+
+      .arrow {
+        cursor: pointer;
+      }
+
+      .value {
+        margin: 0 10px;
+      }
     }
   
     .remove-button {
+      font-size: x-large;
       padding-left: 12px;
       cursor: pointer;
+
+      &:hover{
+        color: red;
+      }
     }
 }
