@@ -20,6 +20,27 @@
     position: absolute;
     top: 75%;
     display: none;
+    font-size: smaller;
+
+    @media screen and (max-width: 800px) {
+      display: block;
+      opacity: 0.9;
+      min-width: unset;
+      padding: 0 10px 0 10px;
+    }
+  }
+
+  @media screen and (max-width: 800px) {
+    width: 40vw;
+    &:hover {
+      .image {
+        opacity: unset;
+      }
+
+      .custom-button {
+        opacity: unset;
+      }
+    }
   }
 
   &:hover {
@@ -38,7 +59,11 @@
     height: 5%;
     display: flex;
     justify-content: space-between;
-    font-size: 18px;
+    font-size: 20px;
+
+    @media screen and (max-width: 800px) {
+      font-size: 14px;
+    }
 
     .name {
       width: 90%;
